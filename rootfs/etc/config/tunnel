@@ -1,0 +1,16 @@
+config ipip tun1
+ 
+  option zone tun
+  option dev tun-ipip-0
+  option remote 192.168.1.1
+  option local 192.168.2.1
+  option network "192.168.100.0/24"
+  lists route '192.168.1.0/24 192.168.0.0/24'
+  option renderer default # netplan / systemd / nm
+  option enabled true
+  option api ''
+  
+ 
+ 
+config device tun1
+  option up true
