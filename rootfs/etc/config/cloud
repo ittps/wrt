@@ -1,0 +1,2 @@
+config cloud yandex
+  option hostname 'cloud.ittps.ru'
